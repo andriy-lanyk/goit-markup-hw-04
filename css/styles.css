@@ -178,7 +178,6 @@ section {
 .hero {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #2f303a;
   color: var(--text-hero-color);
   text-align: center;
 }
@@ -196,6 +195,7 @@ section {
     url('../images/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #2f303a;
 }
 
