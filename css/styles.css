@@ -305,7 +305,8 @@ section {
 /* TEAM */
 
 .work-title,
-.team-title {
+.team-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -396,6 +397,46 @@ section {
 .icon-network {
   width: 20px;
   height: 20px;
+  fill: currentColor;
+}
+
+/* сlients */
+
+.clients-list {
+  display: flex;
+  margin: 0;
+  /* justify-content: space-between; */
+}
+
+.clients-list > .item {
+  width: 170px;
+  height: 90px;
+}
+
+.clients-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  color: var(--primary-fill-color);
+  border-radius: 4px;
+  border: 1px solid var(--primary-fill-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--activ-button-color);
+  border: 1px solid var(--activ-button-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.client-logo {
   fill: currentColor;
 }
 
