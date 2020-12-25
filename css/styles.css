@@ -26,6 +26,7 @@ Font nav, mail, phone, hero, button-hero, h2, h3, p, address, email+phone-footer
   --border-example-color: #eeeeee;
   --secondary-bg-color: #f5f4fa;
   --primary-fill-color: #afb1b8;
+  --network-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -405,7 +406,6 @@ section {
 .clients-list {
   display: flex;
   margin: 0;
-  /* justify-content: space-between; */
 }
 
 .clients-list > .item {
@@ -448,7 +448,13 @@ footer {
   background-color: #2f303a;
 }
 
-.footer > .logo {
+.container.footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.footer-contacts > .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -474,6 +480,61 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  margin-left: 70px;
+
+  width: 206px;
+  height: 80px;
+}
+
+.join > p {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-hero-color);
+}
+
+.network-list-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.network-list-company .item {
+  width: 44px;
+  height: 44px;
+}
+
+.network-list-company .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network-link-company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  color: var(--text-hero-color);
+  background-color: var(--network-bg-color);
+}
+
+.network-link-company:hover,
+.network-link-company:focus {
+  background-color: var(--activ-button-color);
+}
+
+.icon-network-company {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Portfolio */
