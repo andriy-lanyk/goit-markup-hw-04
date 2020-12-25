@@ -24,6 +24,8 @@ Font nav, mail, phone, hero, button-hero, h2, h3, p, address, email+phone-footer
   --title-text-color: #212121;
   --text-hero-color: #ffffff;
   --border-example-color: #eeeeee;
+  --secondary-bg-color: #f5f4fa;
+  --primary-fill-color: #afb1b8;
 }
 
 body {
@@ -267,6 +269,18 @@ section {
   line-height: 1.71;
 }
 
+.icons-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  height: 120px;
+
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+}
+
 /* WORK */
 .work {
   padding-top: 0px;
@@ -305,7 +319,7 @@ section {
   background-color: #f5f4fa;
 }
 
-.team-list .item {
+.team-list > .item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   padding-bottom: 30px;
@@ -343,6 +357,46 @@ section {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.icon-list {
+  display: flex;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  justify-content: space-between;
+}
+
+.icon-list > .item {
+  width: 44px;
+  height: 44px;
+}
+
+.icon-list > .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  color: var(--primary-fill-color);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  color: var(--text-hero-color);
+  background-color: var(--activ-button-color);
+}
+
+.icon-network {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* footer */
