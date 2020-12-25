@@ -151,6 +151,20 @@ section {
   color: var(--primary-text-color);
 }
 
+.envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.smartphone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .contact:hover,
 .contact:focus {
   color: var(--activ-button-color);
